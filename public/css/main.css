@@ -1,0 +1,78 @@
+h1.title {
+    display: block;
+    border-bottom: 2px outset  #C1C1C1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.jumbotron {
+    width: 100%;
+}
+
+.alert {
+    width: 100%;
+}
+
+.tools {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    visibility: hidden;
+}
+
+.wall{
+    background-color: rgb(75, 74, 74);
+}
+
+.playButton{
+   z-index:10;
+   display: block;
+   position: relative;
+}
+
+
+.playButton .icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url(https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png) no-repeat center; 
+    background-size: 80px auto;
+    width: 80px;
+    height: 80px;
+    z-index: 9;
+    opacity: 0;
+    -webkit-transition: all .35s ease-in-out;
+    -ms-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+    margin: -32px 0 0 -32px;
+  }
+  .playButton:hover .icon{
+    opacity: 1;
+  }
+
+  .videoPlayer{
+      width: 1200;
+      height: 700;
+      margin: 20 0 20 0 ;
+  }
+
+  .posterDisplay{
+        width: 240;
+        height: 400;
+
+  }
+
+  .spacing{
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+
+  /* Images configurations */
+
+  .popcorn-logo{
+      width: 200;
+      height: 200;
+  }

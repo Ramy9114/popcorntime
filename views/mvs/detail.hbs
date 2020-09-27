@@ -1,0 +1,56 @@
+<div class="col-50">
+
+    <div align="left">
+        <a href="/mvs" class="btn btn-sm btn-success">Return</a>
+    </div>
+
+
+    <h1 class="title">{{movie.title}}</h1>
+
+    <iframe class="videoPlayer" src="https://www.youtube.com/embed/{{movie.trailerLink}}"></iframe>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <img class="posterDisplay" class="card-img-top" src={{movie.poster}} alt="Card image cap">
+        </div>
+
+        <div class="col-md-9">
+            <h5 class="spacing">Title: {{movie.title}}</h5>
+            <h5 class="spacing">Release Date: {{movie.releaseDate}}</h5>
+            <h5 class="spacing">Rating: {{movie.rating}}</h5>
+            <h5 class="spacing">Views: {{movie.views}}</h5>
+
+
+            <h5>Rate this Film Below:</h5>
+
+            <form action="/mvs/rating/{{movie._id}}" method="POST">
+
+                <input type="radio" id="r5" value="5" name="star">
+                <label for="star">&#9733;</label>
+
+                <input type="radio" id="r4" value="4" name="star">
+                <label for="star">&#9733;</label>
+
+                <input type="radio" id="r3" value="3" name="star">
+                <label for="star">&#9733;</label>
+
+                <input type="radio" id="r2" value="2" name="star">
+                <label for="star">&#9733;</label>
+
+                <input type="radio" id="r1" value="1" name="star">
+                <label for="star">&#9733;</label>
+
+                <button type="submit" class="btn btn-sm btn-warning" margin-left="20px">Submit</button>
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+    
+
+
+</div>

@@ -1,0 +1,85 @@
+<div class="wall">
+
+<form action="/auth/logout?_method=DELETE" method="GET">
+  <button type="submit" class="btn btn-danger" style="align: left;">Log Out</button>
+</form>
+
+<div align ="right">
+  <img src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/popcorn-time-icon.png" style="width: 60; height: 60">
+</div>
+
+
+<div>
+  <h4 class="title">Most Watched</h5>
+  <div class="card-columns" style="column-count: 5;" >
+    {{#each mostWatchedMovies}}
+    <div style="width: 200; height:500" >
+
+      <a href="/mvs/detail/{{this._id}}" class="playButton">
+        <img class="card-img-top" src={{this.poster}} alt="Card image cap">
+        <span class="icon"></span>
+      </a>
+    </div>
+    {{/each}}
+  </div>
+  </div>
+
+
+
+<div>
+  <h4 class="title">Our Top 5</h5>
+  <div class="card-columns" style="column-count: 5;">
+    {{#each bestMovies}}
+    <div class="card" style="width: 200; height:500">
+
+      <a href="/mvs/detail/{{this._id}}" class="playButton">
+        <img class="card-img-top" src={{this.poster}} alt="Card image cap">
+        <span class="icon"></span>
+      </a>
+      <div class="card-body">
+        <p class="card-text">{{{this.title}}}</p>
+        {{#ge this.rating 4.6}}
+        <div align="right">
+        <img src="https://i.pinimg.com/originals/41/36/16/41361625cc44df07f81a620eac766468.png" style="width: 40; height: 40">
+        </div>
+        {{/ge}}
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  </div>
+
+
+
+
+  <div>
+  <h1 class="title">Movies List</h1>
+  <div class="card-columns">
+    {{#each movie}}
+    <div class="card">
+      <a href="/mvs/detail/{{this._id}}" class="playButton">
+        <img class="card-img-top" src={{this.poster}} alt="Card image cap">
+        <span class="icon"></span>
+      </a>
+      <div class="card-body">
+        <p class="card-text">{{{this.title}}}</p>
+        <footer class="blockquote-footer">
+          <small class="text-muted">
+            {{{ formatDate this.dateAdded }}}
+          </small>
+        </footer>
+        {{#ge this.rating 4.6}}
+        <div align="right">
+        <img src="https://i.pinimg.com/originals/41/36/16/41361625cc44df07f81a620eac766468.png" style="width: 40; height: 40">
+        </div>
+        {{/ge}}
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  </div>
+
+
+
+
+

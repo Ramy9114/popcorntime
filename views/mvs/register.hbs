@@ -1,0 +1,43 @@
+
+
+
+<div>
+<h3>Registration</h3>
+</div>
+
+<form action="/auth/register" method="POST">
+
+  <div class="imgcontainer">
+    <img src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/popcorn-time-icon.png" alt="Logo" class="avatar" style="width: 200; height: 200">
+  </div>
+
+  <div class="container">
+    <label for="name"><b>Name*</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+      
+    <label for="email"><b>Email*</b></label>
+    <input type="text" placeholder="Enter Username" name="email" id="email" required>
+
+    <label for="password"><b>Password*</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+    <label for="country"><b>Country*</b></label>
+    <input type="text" placeholder="Enter Country" name="country" id="country" required>
+
+    <label for="city"><b>City*</b></label>
+    <input type="text" placeholder="Enter City" name="city" id="city" required>
+
+    <label for="address"><b>Main Address*</b></label>
+    <input type="text" placeholder="Enter address" name="address" id="address" required>
+    
+    <label for="postalCode"><b>Postal Code*</b></label>
+    <input type="text" placeholder="Enter Postal Code" name="postalCode" id="postalCode" required>
+        
+    <button class="loginButton" type="submit">Register</button>
+    
+  </div>
+
+  <div class="container" style="background-color:black">
+    <a href="/auth/login">Already a member? Login Here!</a>
+  </div>
+</form>

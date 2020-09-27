@@ -1,0 +1,47 @@
+
+{{!-- <h1>Login</h1>
+
+<img class="popcorn-logo" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/popcorn-time-icon.png" alt="alternatetext">
+
+{{#if messages.error}}
+    {{messages.error}}
+{{/if}}
+
+<form action="/auth/login" method="POST">
+
+<div>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" required>
+</div>
+
+<div>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+</div>
+<button type="submit" class="btn btn-success">Login</button>
+<a href="/auth/register">Not a member? Register Here!</a>
+</form> --}}
+<div>
+<h3>Welcome Back</h3>
+</div>
+
+<form action="/auth/login" method="POST">
+  <div class="imgcontainer">
+    <img src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/popcorn-time-icon.png" alt="Logo" class="avatar" style="width: 200; height: 200">
+  </div>
+
+  <div class="container">
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Username" name="email" id="email" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+        
+    <button class="loginButton" type="submit">Login</button>
+    
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <a href="/auth/register">Not a member? Register Here!</a>
+  </div>
+</form>
